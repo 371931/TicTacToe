@@ -1,0 +1,78 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    cursor: url(../images/cursorgree.png),auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Bungee', cursive;
+}
+
+
+.container {
+    min-height: 500px;
+    width: 400px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 100px auto 20px auto;
+    text-align: center;
+}
+
+h1.result {
+    font-size: 2.5em;
+    color: #00ffcc;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 20px rgba(0, 255, 204, 0.8);
+}
+
+button#resBtn {
+    background-color: #00ffcc;
+    color: #111;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#resBtn:hover {
+    background-color: #111;
+    color: #00ffcc;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  repeat(3,127px);
+    gap: 4px;
+    background-color: #111;
+    width: 90%;
+    min-height: 380px;
+    position: relative;
+}
+
+.box {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #00ffcc;
+    user-select: none;
+    border: 2px solid #00ffcc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #00ffcc;
+    color: #111;
+}
